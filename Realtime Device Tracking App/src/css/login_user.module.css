@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+}
+
+.login_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 162, 221);
+    border: 2px solid black;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.email_field{
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.email_field input{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.email_field input:focus{
+    border-color: rgb(25, 158, 202);
+}
+
+.email_field label{
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: oblique;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.email_field input[type="email"]{
+    margin-top: 0.5rem;
+}
+
+.box1{
+    border: 2px solid black;
+    width: 90%;
+    max-width: 600px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button_log{
+    background-color: rgb(25, 158, 202);
+    border: 1px solid #7aa7c7;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.button_log:hover,
+.button_log:focus {
+    background-color: #1e90ff;
+    box-shadow: 0 0 8px rgba(0, 149, 255, 0.4);
+}
+
+.button_log:active{
+    background-color: #1c86ee;
+    box-shadow: none;
+}
+
+.button_center{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+

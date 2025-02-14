@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+}
+
+.signup_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 162, 221);
+    border: 2px solid black;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.box1 {
+    border: 2px solid black;
+    width: 90%;
+    max-width: 600px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Field Styles */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: oblique;
+    margin-bottom: 0.5rem;
+}
+
+.field input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.field input:focus {
+    border-color: rgb(25, 158, 202);
+}
+
+/* Specific Field Adjustments */
+.field input[type="password"],
+.field input[type="text"],
+.field input[type="email"] {
+    margin-top: 0.5rem;
+}
+
+.button_log {
+    background-color: rgb(25, 158, 202);
+    border: 1px solid #7aa7c7;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.button_log:hover,
+.button_log:focus {
+    background-color: #1e90ff;
+    box-shadow: 0 0 8px rgba(0, 149, 255, 0.4);
+}
+
+.button_log:active {
+    background-color: #1c86ee;
+    box-shadow: none;
+}
+
+/* Button Center */
+.button_center {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box1 {
+        padding: 1rem;
+    }
+
+    .field input {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .button_log {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box1 {
+        padding: 0.5rem;
+    }
+
+    .field label {
+        font-size: 0.9rem;
+    }
+
+    .field input {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .button_log {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

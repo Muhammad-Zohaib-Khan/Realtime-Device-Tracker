@@ -1,0 +1,120 @@
+.profiles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image{
+    border: none;
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px 8px 0 0;
+}
+
+h1{
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+h5{
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex a,
+.flex a:visited{
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.flex a:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.flex a:first-child{
+    margin-right: 10px;
+}
+.tracker{
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.create_user{
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+.set_button{
+    display:flex;
+    justify-content: space-between;
+}
+
+.design{
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.design:hover,
+.design:focus{
+    background-color: #F082AC;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
